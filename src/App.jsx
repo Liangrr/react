@@ -1,21 +1,30 @@
 import React, {Component} from 'react'
-
+//	父子传值
 import Father from './父子间传值/Father.js'
-
-
-import ABreact from './非父子间传值/ABreact.js'
-// 创建组件
-// export default class App extends React.Component{
-
+//	非父子间传值，通过子传父，父传子
+import ABreact from './非父子间传值2/ABreact.js'
+//	非父子间传值，通过发布/订阅
+import One from './非父子间传值/One.js'
+import Two from './非父子间传值/Two.js'
 export default class App extends Component{
-//	非父子间传值
+//	非父子间传值，通过子传父，父传子
 	render(){
 		return (
 			<div>
-				<ABreact></ABreact>
+				<One></One>
+				<Two></Two>
 			</div>
 		)
 	}
+	
+//	非父子间传值，通过子传父，父传子
+//	render(){
+//		return (
+//			<div>
+//				<ABreact></ABreact>
+//			</div>
+//		)
+//	}
 	
 //	父子传值的render
 //	render(){
